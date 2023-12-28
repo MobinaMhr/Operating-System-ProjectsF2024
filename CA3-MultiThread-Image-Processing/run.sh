@@ -11,15 +11,7 @@ test_iterations=1
 thread_count=4
 
 cd ./serial || exit
-make clean > /dev/null
 make > /dev/null || { echo "Error: Compilation failed for serial"; exit 1; }
-echo "$(ls)"
-
-touch ./serial.txt
-echo "--------------"
-
-echo "$(ls)"
-
 ./ImageFilters.out "$input" "$test_iterations" >> ./serial.txt
 
 echo -e "${LIGHT_GREEN}-------------- Running Serial -------------${NC}"
@@ -30,11 +22,7 @@ echo
 cd ..
 
 cd ./parallel || exit
-
-make clean > /dev/null
 make > /dev/null || { echo "Error: Compilation failed for parallel"; exit 1; }
-touch ./parallel.txt
-
 ./ImageFilters.out "$input" "$test_iterations" "$thread_count" >> ./parallel.txt
 
 echo -e "${LIGHT_GREEN}------------- Running Parallel -------------${NC}"
