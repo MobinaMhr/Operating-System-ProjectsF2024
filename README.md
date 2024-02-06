@@ -1,27 +1,13 @@
 # Operating-System-ProjectsF2024
-* CA2. [MapReduce](https://github.com/MobinaMhr/Operating-System-ProjectsF2024/tree/main/CA2-MapReduce)
 
-## Building Utility Consumption Analyzer
+- ## [CA1](https://github.com/MobinaMhr/Operating-System-ProjectsF2024/tree/main/CA1-Socket-Programming). Socket-Programming
 
-### Introduction
-This project focuses on the management of building utility processes and their communication methods. The exercise involves performing computational operations on data obtained from building meters. The implementation utilizes the Map-Reduce model, particularly focusing on the mapping and reduction phases. The project addresses the mapping-reduction model, emphasizing its significance in handling large datasets in a distributed environment.
+This project focuses on creating a decentralized food ordering system using C language's system calls and socket programming. The decentralized architecture enables communication among nodes without a central administrator. The core functionality involves establishing communication through sockets for food orders, and special attention is given to robust error handling, incorporating customized error messages to address potential issues during program execution.
 
-### Map-Reduce Model
-In today's world, the exponential growth of data, especially with the advent of the Internet and smart devices, requires efficient processing methods. The Map-Reduce model is a programming framework that enables parallel and distributed processing of extensive datasets. This project delves into the concepts of mapping and reduction to analyze utility consumption in various buildings.
+- ## [CA2](https://github.com/MobinaMhr/Operating-System-ProjectsF2024/tree/main/CA2-MapReduce). MapReduce
 
-### Project Description
-The goal of this project is to calculate statistical indices related to the consumption of electricity, gas, and water in factory buildings. The provided dataset includes consumption data for each resource in different buildings over the past two months, recorded at various hours. The project tasks involve calculating peak consumption hours for each resource and determining the average consumption for each building.
+This project focuses on managing building utility processes using the Map-Reduce model, emphasizing its significance in handling large datasets in a distributed environment. The implementation involves calculating statistical indices related to electricity, gas, and water consumption in factory buildings, identifying peak consumption hours, determining average consumption for each building, and utilizing parallel execution through mapping processes for enhanced performance.
 
-### Implementation Details
-Each building has a corresponding folder named after it, containing three CSV files for each resource (electricity, gas, and water). Each file holds resource consumption data, with the resource name matching the file name.
+- ## [CA3](https://github.com/MobinaMhr/Operating-System-ProjectsF2024/tree/main/CA3-MultiThread-Image-Processing). MultiThread-Image-Processing
 
-The implementation involves an initial process that receives the "buildings" folder path as a command-line argument. This process identifies and lists all available buildings, prompts the user to select one or more resources, and then creates child processes for each selected building. Each building process, in turn, spawns mapping processes for each resource, enabling parallel execution.
-
-The calculation of bills for each resource involves specific formulas based on peak hours and average consumption.
-
-### How to Run
-To execute the program, run the initial process with the "buildings" folder path as a command-line argument. Follow the interactive prompts to select resources and buildings.
-
-### Notes
-This program ensures interactivity, allowing users to specify the desired report format.
-The user defines the final report, indicating the chosen resource, building, and relevant indices.
+This project involves implementing multi-threaded applications to apply various filters, including Vertical Mirror, Gaussian Blur, Purple Haze, and Diagonal Hatch-Like Lines, to 24-bit Bitmap (BMP) format images. The primary objectives include exploring fundamental concepts in designing multi-threaded systems and comparing the performance of filter applications between serial and parallel execution.
